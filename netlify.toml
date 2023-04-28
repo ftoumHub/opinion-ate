@@ -1,0 +1,3 @@
+[build]
+  # Default build command.
+  command = "rm yarn.lock && yarn build"

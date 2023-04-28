@@ -11,6 +11,8 @@ jobs:
         run: yarn install --no-lockfile
       - name: Unit Tests
         run: yarn test --watchAll=false
+      - name: Set up npm package
+        run: npm i --package-lock-only
       - name: E2E Tests
         uses: cypress-io/github-action@v4
         with:

@@ -6,10 +6,17 @@ import {useEffect} from 'react';
  * loadRestaurants changes. In our test (and in our real application) loadRestaurants will
  * never change, so the effect just runs once when the component first renders.
  */
-export default function RestaurantList({loadRestaurants}) {
+export default function RestaurantList({loadRestaurants, restaurants}) {
   useEffect(() => {
     loadRestaurants();
   }, [loadRestaurants]);
-  
-  return <div>RestaurantList</div>;
-}
+
+  return (
+    <ul>
+      {restaurants.map(restaurant => (
+        <li key={restaurant.id}>{restaurant.name}</li>
+      ))}
+    </ul>
+  );
+};
+

@@ -2,6 +2,10 @@
 
 yarn start
 
+# Lancer les TU
+
+yarn test
+
 # Tests cypress
 
 yarn cypress

@@ -1,3 +1,5 @@
+cf. https://github.com/CodingItWrongDemo/opinion-ate
+
 # opinion-ate
 
 An app for tracking reviews of dishes at different restaurants.
